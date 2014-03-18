@@ -17,7 +17,7 @@ var app = (function() {
   function init() {
     document.addEventListener('deviceready', function() {
       // FirebaseSimpleLogin demo instantiation
-      var firebaseRef = new Firebase('https://demos.firebaseio.com');
+      var firebaseRef = new Firebase('https://backlogapp.firebaseio.com');
       auth = new FirebaseSimpleLogin(firebaseRef, function(error, user) {
         if (error) {
           // an error occurred while attempting login
